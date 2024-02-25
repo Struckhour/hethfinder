@@ -18,6 +18,8 @@ Currently, HethFinder requires that python be installed on the user’s computer
 
 ### Usage
 
+Watch the included .mp4 video for a tutorial of how to use HethFinder with the included .wav file.
+
 **Setup**
 1.	Begin with a folder that contains the following files:
     i.	the wave file(s) to be analyzed.
