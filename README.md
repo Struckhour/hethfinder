@@ -10,7 +10,7 @@ HethFinder uses a machine learning model to search through wave files for hermit
 - a hethfinder_params.csv file with wave files listed and (optional) start and stop times if you prefer to analyze only a portion of the file for faster, more accurate, performance. It is recommended that you preview the spectrogram beforehand and input a region where clear hermit thrush song occurs.
 
 **Output**:
-- .txt file(s) that is formatted to be opened in Raven as a selection table. HethFinder will attempt to identify each hermit thrush song by placing a box around the intro note portion of the song.
+- .txt file(s) that is formatted to be opened in [Raven] as a selection table. HethFinder will attempt to identify each hermit thrush song by placing a box around the intro note portion of the song.
 
 ### Installation
 
@@ -28,10 +28,10 @@ Currently, HethFinder requires that python be installed on the user’s computer
 
 **Run HethFinder**
 1.	Open HethFinder.py in whatever code editor you use. Popular options are VSCode, Idle, or Jupyter Labs.
-2.	Run HethFinder. It will take approximately as long as the selected recordings. For example, each ten-minute file will take approximately ten minutes to analyze. Set it and forget it! HethFinder will produce a .txt file for each .wav file it analyzes. These can be opened in Raven as selection tables. The text files could also very likely be modified to be opened in other acoustic analysis software. They are basically just a list of times (s) and frequencies (Hz).
+2.	Run HethFinder. It will take approximately as long as the selected recordings. For example, each ten-minute file will take approximately ten minutes to analyze. Set it and forget it! HethFinder will produce a .txt file for each .wav file it analyzes. These can be opened in [Raven] as selection tables. The text files could also very likely be modified to be opened in other acoustic analysis software. They are basically just a list of times (s) and frequencies (Hz).
 
 **Review and Manually Edit**
-1.	Open each new selection table and wave file in Raven. Check the selections for errors and fix them if need be. Depending on the research question and amount of error, editing may or may not be necessary. HethFinder accuracy varies depending on several factors, including signal strength, background noise, song-types, and presence of countersinging (for more information, see accuracy tests below).
+1.	Open each new selection table and wave file in [Raven]. Check the selections for errors and fix them if need be. Depending on the research question and amount of error, editing may or may not be necessary. HethFinder accuracy varies depending on several factors, including signal strength, background noise, song-types, and presence of countersinging (for more information, see accuracy tests below).
 
 ### How HethFinder Works
 
@@ -53,7 +53,7 @@ If everything has gone well, each timestamp from stage 2 should be within ~500ms
 
 It then uses an even smaller, short-but-wide camera frame to sweep up and down the area preceding the post-introductory portion, searching for an intro note. This is typically a long horizontal line on a spectrogram. HethFinder prioritizes the loudest line and the leftmost line, striking a balance between the two if they conflict. Once it chooses a line, it outputs the timestamp at the beginning of the line and the pitch frequency of the middle of the line.
 
-The output of stage three is a raven selection table with timestamps and frequencies corresponding to each selected song.
+The output of stage three is a [Raven] selection table with timestamps and frequencies corresponding to each selected song.
 
 ### Contact and Additional Info:
 
@@ -62,3 +62,6 @@ The output of stage three is a raven selection table with timestamps and frequen
 **Future Versions:** It is my hope that I will continue to improve HethFinder as I use it and find time to work on it. If you’d like to help or have questions, don’t hesitate to contact me.
 
 **HethSorter:**  Finding songs is usually only the first part of analyzing hermit thrush song. After HethFinder finds the songs, HethSorter sorts them into labelled song-types. So, if you have songs that need labelling, be sure to check out HethFinder’s best friend and companion, HethSorter.
+
+
+[Raven]: https://www.ravensoundsoftware.com/software/raven-pro/
