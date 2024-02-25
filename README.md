@@ -47,7 +47,7 @@ The ML model does not provide enough information to know precisely and accuratel
 
 The output of stage 2 is a list of timestamps corresponding to when HETH songs are likely to occur.
 
-### 3. _Intro-note Selection_
+#### 3. _Intro-note Selection_
 
 If everything has gone well, each timestamp from stage 2 should be within ~500ms of an actual HETH song. The purpose of stage 3 is to narrow the temporal precision and find the frequency of the intro note. Like at stage 1, HethFinder again takes overlapping pictures. This time, it uses a smaller camera frame to sweep and filter the local region for the most acoustically active, hermit-thrush-like area, which should correspond to the post-introductory portion of the song.
 
